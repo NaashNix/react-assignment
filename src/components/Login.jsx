@@ -1,28 +1,72 @@
-import { Container, Typography } from "@material-ui/core";
+import {
+  Button,
+  Container,
+  Link,
+  TextField,
+  Typography,
+} from "@material-ui/core";
 import React from "react";
+import "./Styles/Login.css";
 
 const Login = () => {
   return (
     <Container
       style={{
-        backgroundColor: "pink",
+        padding:"0",
+        margin:"0",
+        backgroundColor:"#d9d9d9",
         height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        maxWidth:"100vw"
       }}
     >
       <div
         style={{
           backgroundColor: "white",
           display: "flex",
-          padding:"3rem",
-          margin:"1rem"
+          padding: "3rem",
+          margin: "1rem",
+          flexDirection: "column",
+          width: "25rem",
+          borderRadius: "10px",
+          boxShadow: "0 1rem 3rem rgba(1, 1, 1, 0.275)",
         }}
       >
-        <Typography variant="h1" gutterBottom>
+        <Typography variant="h4" gutterBottom>
           LOGIN
         </Typography>
+
+        <TextField
+          label="Username"
+          autofocus
+          required
+          variant="outlined"
+          margin="dense"
+        />
+
+        <TextField
+          label="Password"
+          required
+          variant="outlined"
+          margin="dense"
+        />
+
+        <Button
+          variant="contained"
+          color="primary"
+          style={{ margin: "1rem 4rem" }}
+        >
+          Login
+        </Button>
+
+        <p>
+          Create New User Account?
+          <Link style={{ marginLeft: "0.4rem" }} href="#">
+            Click Here
+          </Link>
+        </p>
       </div>
     </Container>
   );
