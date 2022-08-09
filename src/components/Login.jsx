@@ -40,7 +40,7 @@ const Login = () => {
 
         <TextField
           label="Username"
-          autofocus
+          autoFocus
           required
           variant="outlined"
           margin="dense"

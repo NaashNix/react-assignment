@@ -1,4 +1,4 @@
-import { Container } from '@material-ui/core';
+import { Button, Container } from '@material-ui/core';
 import React from 'react';
 import CartManageForm from './CartManageForm';
 import './Styles/CartManage.css';
@@ -15,12 +15,13 @@ const CartManage = () => {
               justifyContent: "flex-start",
             }}
           >
-            <h2>Cart Manage</h2>
+            <h1>User Registration</h1>
           </div>
 
-            <CartManageForm />
-            
+          <CartManageForm />
+          
         </Container>
+        
       </div>
     );
 }
