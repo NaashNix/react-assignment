@@ -3,6 +3,7 @@ import React from 'react'
 import './App.css';
 // import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+import ProductManage from './components/ProductManage';
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
     <div className="App">
         {/* <Login />     */}
         {/* <Dashboard /> */}
+        {/* <ProductManage /> */}
+        
     </div>
   );
 }
