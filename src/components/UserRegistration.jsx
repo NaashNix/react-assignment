@@ -1,11 +1,12 @@
 import { Container } from '@material-ui/core';
 import React from 'react';
 import UserRegistrationForm from './UserRegistrationForm';
+import UsersTable from './UsersTable';
 
 
 const UserRegistration = () => {
     return (
-      <Container>
+      <Container> 
         <div
           style={{
             display: "flex",
@@ -15,6 +16,8 @@ const UserRegistration = () => {
           <h2>Cart Manage</h2>
         </div>
         <UserRegistrationForm />
+
+        <UsersTable />
       </Container>
     );
 }

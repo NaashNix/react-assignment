@@ -117,9 +117,7 @@ const UserRegistrationForm = () => {
       </Grid>
       <div
         style={{
-          width: "90%",
-          position: "absolute",
-          bottom: "2rem",
+          width: "100%",
           display: "flex",
           justifyContent: "flex-end",
         }}
@@ -133,7 +131,7 @@ const UserRegistrationForm = () => {
         >
           Clear
         </Button>
-        <Button
+        <Button 
           style={{
             margin: "0.5rem",
           }}
